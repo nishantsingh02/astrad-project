@@ -1,16 +1,14 @@
-
-import Home from '../components/hero';
-import Form from '../components/form';
+import "../src/App.css"
+import Home from '../components/Hero';
+import Form from '../components/Form';
+import Card from "../components/Card";
 import {BrowserRouter, Routes, Route , Link, useNavigate, Outlet} from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/generate" element={<Form />} />
-    </Routes>
-    </BrowserRouter>
+   <div>
+    <Card />
+   </div>
   );
 }
 
