@@ -22,7 +22,9 @@ function Generate() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    const updatedData = { ...formData, [name]: value };
+    setFormData(updatedData);
+    localStorage.setItem('astradForm', JSON.stringify(updatedData));
   };
 
   const handleSubmit = (e) => {
