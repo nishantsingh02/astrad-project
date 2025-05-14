@@ -1,7 +1,8 @@
 import '../src/App.css'
 
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 function Generate() {
   const [formData, setFormData] = useState({
@@ -11,6 +12,8 @@ function Generate() {
     timeOfBirth: '',
     cityOfBirth: ''
   });
+
+  const navigate = useNavigate();
 
   // Load saved data from localStorage on mount
   useEffect(() => {
@@ -30,6 +33,7 @@ function Generate() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    navigate('/card');
     // You can trigger backend API call here
   };
 
