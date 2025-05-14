@@ -2,9 +2,12 @@ import { useState } from "react";
 import "./App.css";
 import "./index.css";
 
+import Generate from "./components/generate";
+
 function App() {
   return (
-    <div>
+    <div className="">
+      <Generate/>
       <div className="text-xl">Astrad</div>
       <div className="p-10">
         <h1>What if your <span className="text-yellow-500">birth chart</span></h1>
@@ -14,8 +17,9 @@ function App() {
         <button className="border-2 font border-yellow-400 p-4 rounded-full bg-yellow-600 text-white shadow-md hover:shadow-yellow-500 hover:scale-105 transition duration-300">
   Generate My Character
 </button>
-
+      
       </div>
+
     </div>
   );
 }
