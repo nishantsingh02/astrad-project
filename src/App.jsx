@@ -1,7 +1,7 @@
 
 import Home from '../components/Hero';
 import Form from '../components/Form';
-import Card from '../components/Card'
+import Card from '../components/card';
 import {BrowserRouter, Routes, Route , Link, useNavigate, Outlet} from "react-router-dom";
 
 function App() {
@@ -12,7 +12,6 @@ function App() {
         <Route path='/' element={<Home />}></Route>
         <Route path='/generate' element={<Form />}></Route>
         <Route path='/card' element={<Card />}></Route>
-
       </Routes>
     </BrowserRouter>
    </>
