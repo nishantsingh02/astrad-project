@@ -4,9 +4,14 @@ function Card() {
     const [name , setName] = useState("");
 
     useEffect(() => {
-        const storedName = localStorage.getItem("name");
+        const storedName = localStorage.getItem("astradForm");
         if(storedName) {
-            setName(storedName);
+            try {
+              const parsedData = JSON.parse(storedName);
+              setName(parsedData.name); // ✅ Access the name property
+          } catch (error) {
+            console.error("Error parsing stored data", error);
+          }
         }
     },[]);
 

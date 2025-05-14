@@ -13,7 +13,7 @@ function Hero() {
   return (
     <div className="relative flex items-center justify-center w-screen h-screen overflow-hidden">
       
-      <div style={{}} className="z-[-100] absolute bg-red-50 opacity-10 w-screen h-screen rotate-animation"></div>
+      <div style={{}} className="z-[-100] absolute bg-red-50 opacity-10 w-screen h-screen rotate-animation-30"></div>
 
       <div className="z-0 text-center">
         <div className="text-xl">Astrad</div>
