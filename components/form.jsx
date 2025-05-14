@@ -1,3 +1,6 @@
+import '../src/App.css'
+
+
 import { useState } from 'react';
 
 function Generate() {
