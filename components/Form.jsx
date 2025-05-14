@@ -1,7 +1,7 @@
 import '../src/App.css'
 
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Generate() {
   const [formData, setFormData] = useState({

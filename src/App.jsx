@@ -1,6 +1,6 @@
 
-import Home from '../components/hero';
-import Form from '../components/form';
+import Home from '../components/Hero';
+import Form from '../components/Form';
 import {BrowserRouter, Routes, Route , Link, useNavigate, Outlet} from "react-router-dom";
 
 function App() {
